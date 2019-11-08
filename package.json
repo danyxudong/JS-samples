@@ -1,0 +1,25 @@
+{
+  "name": "js-samples",
+  "version": "0.0.1",
+  "description": "These samples is used for JS/Node Learnning",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danyxudong/js-samples.git"
+  },
+  "keywords": [
+    "JS"
+  ],
+  "author": "dany.xu.2009@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danyxudong/js-samples/issues"
+  },
+  "homepage": "https://github.com/danyxudong/js-samples#readme",
+  "dependencies": {
+    "blessed": "^0.1.81"
+  }
+}
