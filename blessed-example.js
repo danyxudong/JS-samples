@@ -53,6 +53,10 @@ box.on("click", function(data) {
   screen.render();
 });
 
+box.on("hover", function(data) {
+  box.style.bg = "green";
+});
+
 // If box is focused, handle "enter" /  "return" and give us some more content.
 box.key("enter", function(ch, key) {
   box.setContent('{right}Even diferent {black-fg}content{/black-fg}.{/rights}\n');
