@@ -53,7 +53,7 @@ box.on("click", function(data) {
   screen.render();
 });
 
-box.on("hover", function(data) {
+box.mouse("hover", function(data) {
   box.style.bg = "green";
 });
 
