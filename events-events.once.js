@@ -19,8 +19,8 @@ async function run() {
 
   try {
     await once(ee, "myevent");
-  } catch (err) {
-    console.log("error happened", err);
+  } catch(e) {
+    console.log("error happened", e);
   }
 }
 
