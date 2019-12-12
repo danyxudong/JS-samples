@@ -12,6 +12,9 @@ process.title = "My Example of Blessed.program()";
 program.on("keypress", function(ch, key) {
   if (key.name === "q") {
     program.clear();
+    program.disableMouse();
+    program.showCursor();
+    program.normalBuffer();
     process.exit(0);
   }
 });
