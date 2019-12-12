@@ -11,6 +11,7 @@ var form = blessed.form({
   width: 30,
   height: 4,
   bg: "green",
+  fg: "black",
   content: "Submit or Cancel ?"
 });
 
