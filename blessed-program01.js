@@ -23,6 +23,6 @@ program.enableMouse();
 program.clear();
 
 program.move(1, 1);
-program.bg("green");
+program.bg("blue");
 program.write("Hello world", "fg black");
-program.bg("!green");
+program.bg("!blue");
