@@ -20,6 +20,7 @@ program.on("keypress", function(ch, key) {
 });
 
 program.enableMouse();
+program.clear();
 
 program.move(1, 1);
 program.bg("green");
