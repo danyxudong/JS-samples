@@ -39,6 +39,31 @@ var submit = blessed.button({
   }
 });
 
+var cancel = blessed.button({
+  parent: form,
+  mouse: true,
+  keys: true,
+  shrink: true,
+  padding: {
+    left: 1,
+    right: 1
+  },
+  left: 20,
+  top: 2,
+  name: "cancel",
+  content: "Cancel",
+  style: {
+    bg: "blue",
+    focus: {
+      bg: "red"
+    },
+    hover: {
+      bg: "red"
+    }
+  }
+
+});
+
 screen.key("q", function () {
   process.exit(0);
 });
