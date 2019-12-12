@@ -15,6 +15,30 @@ var form = blessed.form({
   content: "Submit or Cancel ?"
 });
 
+var submit = blessed.button({
+  parent: form,
+  mouse: true,
+  keys: true,
+  shrink: true,
+  padding: {
+    left: 1,
+    right: 1
+  },
+  left: 10,
+  top: 2,
+  name: "submit",
+  content: "Submit",
+  style: {
+    bg: "blue",
+    focus: {
+      bg: "red"
+    },
+    hover: {
+      bg: "red"
+    }
+  }
+});
+
 screen.key("q", function () {
   process.exit(0);
 });
