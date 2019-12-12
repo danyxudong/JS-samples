@@ -24,4 +24,5 @@ program.clear();
 
 program.move(1, 1);
 program.bg("green");
-program.write("Hello world", "black fg");
+program.write("Hello world", "fg black");
+program.bg("!green");
