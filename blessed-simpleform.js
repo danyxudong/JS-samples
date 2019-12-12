@@ -61,7 +61,24 @@ var cancel = blessed.button({
       bg: "red"
     }
   }
+});
 
+submit.on("press", function() {
+  form.submit();
+});
+
+cancel.on("press", function() {
+  form.reset();
+});
+
+form.on("submit", function(data) {
+  form.setContent("Sumitted.");
+  screen.render();
+});
+
+form.on("reset", function(data) {
+  form.setContent("Canceled.");
+  screen.render();
 });
 
 screen.key("q", function () {
